@@ -28,8 +28,8 @@ INSERT INTO Sales (SaleID, ProductID, Quantity, SaleDate) VALUES
 
 SELECT 
     Products.ProductID, 
-	Products.ProductName,
-	YEAR(Sales.SaleDate) AS Year_,
+    Products.ProductName,
+    YEAR(Sales.SaleDate) AS Year_,
     SUM(Sales.Quantity) AS NumberofSales, 
     SUM(Sales.Quantity * Products.Price) AS SalesAmount
 FROM 
